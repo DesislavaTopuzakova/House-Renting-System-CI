@@ -27,7 +27,7 @@ namespace HouseRentingSystem.Services.Houses
         }
 
         public bool Exists(int id)
-           => this.data.Houses.Any(h => h.Id == id);
+           => this.data.Houses.Any(h => h.Id <= id);
 
         public HouseDetailsServiceModel HouseDetailsById(int id)
         {
